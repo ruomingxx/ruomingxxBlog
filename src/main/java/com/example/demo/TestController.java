@@ -16,7 +16,7 @@ public class TestController {
 
 	public ResponseEntity<String> home(){
 
-		return ResponseEntity.ok("Hello world");
+		return ResponseEntity.ok("Hello");
 	}
 
 }
