@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Jason on 8/21/2017.
+ * Created by Jason
+ * on 8/21/2017.
  */
 
 
@@ -16,7 +17,10 @@ public class TestController {
 
 	public ResponseEntity<String> home(){
 
-		return ResponseEntity.ok("Hello 123");
+
+        System.out.println(123);
+
+		return ResponseEntity.ok("Hello 1");
 	}
 
 }
