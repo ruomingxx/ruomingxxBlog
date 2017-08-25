@@ -3,10 +3,12 @@ html{
 }
 
 body {
-    background: #fff;
-    font: 300 1em/1.8 "Helvetica Neue",Helvetica, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+
+    background: linear-gradient(to bottom, #e8ffe8, #afeeee);
+    /*background: #e8ffe8;*/
+    font: 300 1em/1.8
     -webkit-font-smoothing: antialiased;
-    color: #515862;
+    color: #666666;
 }
 
 a{
@@ -22,8 +24,10 @@ a{
 
 /* override typo css */
 h1, h2, h3, h4, h5, h6{
-    color: #47596D;
+    color: #666666;
     -webkit-font-smoothing: normal;
+    -moz-font-smoothing: normal;
+    -o-font-smoothing: normal;
 }
 .typo a{
     color: #337ab7;
@@ -33,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 hr{
-    border-color: #eee;
+    border-color: #7aa6a6;
 }
 
 /* end */
@@ -271,5 +275,5 @@ ul.tags li{
 }
 
 .footer-wrapper hr{
-    border-color: #ddd;
+    border-color: #698E8E;
 }

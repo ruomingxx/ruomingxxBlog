@@ -12,7 +12,7 @@ public class AppSetting {
 
     private SettingService settingService;
 
-    private String siteName = "SpringBlog";
+    private String siteName = "Ruomingxx Blog";
     private String siteSlogan = "An interesting place to discover";
     private Integer pageSize = 5;
 

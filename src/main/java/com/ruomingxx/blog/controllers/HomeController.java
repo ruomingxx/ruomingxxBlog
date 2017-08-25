@@ -21,8 +21,8 @@ public class HomeController {
     @Autowired
     private AppSetting appSetting;
 
-    @RequestMapping(value = "", method = GET)
-    public String index(@RequestParam(defaultValue = "1") int page, Model model) {
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public String home(@RequestParam(defaultValue = "1") int page, Model model) {
         page = page < 1 ? 0 : page - 1;
         Page<Post> posts = postService.getAllPublishedPostsByPage(page, appSetting.getPageSize());
 
