@@ -9,6 +9,7 @@ import com.ruomingxx.blog.repositories.PostRepository;
 import com.ruomingxx.blog.repositories.UserRepository;
 import com.ruomingxx.blog.services.PostService;
 import com.ruomingxx.blog.utils.DTOUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -20,14 +21,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.validation.Valid;
 import java.security.Principal;
 
-import static org.springframework.web.bind.annotation.RequestMethod.*;
+import javax.validation.Valid;
 
-/**
- * @author Raysmond<i@raysmond.com>
- */
+import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+import static org.springframework.web.bind.annotation.RequestMethod.PUT;
+
+
 @Controller("adminPostController")
 @RequestMapping("admin/posts")
 public class PostController {

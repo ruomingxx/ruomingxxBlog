@@ -1,9 +1,7 @@
-
 apply plugin: 'java'
+apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
-apply plugin: 'idea'
-
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -19,11 +17,9 @@ repositories {
     maven { url "http://repo.springsource.org/repo" }
 }
 
-
 bootRun {
     systemProperties = System.properties
 }
-
 
 configurations {
     compile.exclude module: "spring-boot-starter-tomcat"
@@ -114,10 +110,12 @@ dependencies {
 
 }
 
+
 buildscript {
     ext {
-        springBootVersion = '1.5.6.RELEASE'
+        springBootVersion = '1.2.6.RELEASE'
     }
+
     repositories {
         mavenLocal()
         jcenter()
@@ -132,5 +130,3 @@ buildscript {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
     }
 }
-
-

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * @author Raysmond<i@raysmond.com>
+ * @author ruomingxx<i@ruomingxx.com>
  */
 @Repository
 @Transactional

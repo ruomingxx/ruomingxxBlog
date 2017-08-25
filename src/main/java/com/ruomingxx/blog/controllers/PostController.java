@@ -13,7 +13,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 
 /**
- * @author Raysmond<i@raysmond.com>
+ * @author ruomingxx<i@ruomingxx.com>
  */
 @Controller
 @RequestMapping("posts")

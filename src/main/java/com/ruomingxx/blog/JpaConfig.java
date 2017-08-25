@@ -2,6 +2,7 @@ package com.ruomingxx.blog;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,13 +14,10 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
-import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Created by jicheng
- * on 8/24/2017.
- */
+import javax.sql.DataSource;
+
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackageClasses = Application.class)
@@ -62,7 +60,7 @@ class JpaConfig implements TransactionManagementConfigurer {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(configureDataSource());
-        entityManagerFactoryBean.setPackagesToScan("com.ruomingxx.blog");
+        entityManagerFactoryBean.setPackagesToScan("com.raysmond.blog");
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         Properties jpaProperties = new Properties();
