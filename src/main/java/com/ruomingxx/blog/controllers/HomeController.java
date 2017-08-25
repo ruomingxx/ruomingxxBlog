@@ -37,9 +37,6 @@ public class HomeController {
         model.addAttribute("totalPages", posts.getTotalPages());
         model.addAttribute("posts", posts);
         model.addAttribute("page", page + 1);
-        
-        
-
 
         return "home/index";
     }
