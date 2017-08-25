@@ -39,7 +39,7 @@ public class HomeController {
         model.addAttribute("page", page + 1);
         
         
-        System.out.println("123);
+
 
         return "home/index";
     }
