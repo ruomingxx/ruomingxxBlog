@@ -15,7 +15,7 @@ services:
       volumes:
         - ./build/libs/SpringBlog-0.1.jar:/app/app.jar
       ports:
-        - "7000:7000"
+        - "9000:9000"
       command: "java -jar /app/app.jar --spring.profiles.active=dev"
 
 #    redis:

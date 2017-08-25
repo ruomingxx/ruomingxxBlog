@@ -1,25 +1,12 @@
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-
-### IntelliJ IDEA ###
 .idea
-*.iws
+.gradle
+build
+bin
+scripts
+classes
+out
+production_app.properties
 *.iml
 *.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+*.iws
+src/main/resources/resources/bower_components
