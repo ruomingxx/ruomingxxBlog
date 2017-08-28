@@ -58,7 +58,6 @@ public class PostService {
     @Cacheable(CACHE_NAME)
     public Post getPublishedPostByPermalink(String permalink) {
         logger.debug("Get post with permalink " + permalink);
-
         Post post = postRepository.findByPermalinkAndPostStatus(permalink, PostStatus.PUBLISHED);
 
         if (post == null) {
